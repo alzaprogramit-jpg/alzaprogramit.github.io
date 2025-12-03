@@ -1,0 +1,571 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #1e3a8a;
+  margin-bottom: 5px;
+}
+
+h2.judul {
+  color: #1d4ed8;
+  border-left: 5px solid #2563eb;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.card {
+  background-color: #f9fafb;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+
+.avatar, .profil {
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px auto;
+}
+
+ul, ol {
+  margin: 10px 0 0 25px;
+}
+
+a.button {
+  display: inline-block;
+  background-color: #ffff;        /* kotak putih */
+  color: #333;                   /* teks gelap, kelihatan */
+  border: 2px solid #e5e7eb;     /* garis tipis abu */
+  padding: 8px 18px;
+  border-radius: 8px;            /* kotak halus, bukan lonjong */
+  margin-right: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+a.button.active {
+  background-color: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+
+a.button:hover {
+  background-color: #e5e7eb;
+  color: #000;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  /* background-color: #1e3a8a; */
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+/* Efek hover lembut untuk navbar */
+nav a {
+  color: white;
+  margin: 0 10px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+
+nav a.active {
+  background-color: #2563eb;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+
+.avatar:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Styling untuk foto profil di halaman Biodata */
+.profil:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  border-radius: 0 0 15px 15px;
+}
+
+/* 🌄 Tampilan Galeri */
+.gallery {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.gallery h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.gallery p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gallery .card {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.gallery figcaption {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #1e3a8a;
+}
+
+iframe {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+/* ====== Bagian Galeri Desain ====== */
+.gallery-section {
+  padding: 20px;
+  text-align: left;
+}
+
+.gallery-section .judul {
+  color: #1e3a8a; /* biru lembut */
+  margin-bottom: 10px;
+}
+
+.gallery-card img,
+.gallery-card video {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery-card figcaption {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #222;
+  line-height: 1.4;
+}
+/* ======== BIODATA ======== */
+/* kode biodata yang baru */
+
+/* ===== Layout foto dan teks berdampingan di halaman biodata ===== */
+.bio-content {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* jarak antara foto dan teks */
+}
+
+.bio-content .profil {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0;
+  flex-shrink: 0; /* biar foto nggak mengecil */
+}
+
+.bio-text {
+  flex: 1;
+  line-height: 1.7;
+  color: #333;
+}
+
+.biodata .bio-content {
+  flex-direction: row;
+}
+
+
+/* ====== Avatar Section ====== */
+.avatar-row {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.avatar-row .avatar {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0;
+  flex-shrink: 0; /* biar gambar gak mengecil */
+}
+
+.avatar-text {
+  flex: 1;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* =============================
+   🕒 TABEL JADWAL SANTRI
+   ============================= */
+.jadwal-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.jadwal-table th {
+  background-color: #1e3a8a;
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.jadwal-table td {
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+}
+
+.jadwal-table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.jadwal-table tr:hover {
+  background-color: #e0e7ff;
+  transition: 0.3s;
+}
+
+/* =============================== */
+/* 🎯 STYLING UNTUK FORM FEEDBACK  */
+/* =============================== */
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  color: #1e3a8a;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.3);
+}
+
+/* Radio & Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 6px;
+  accent-color: #2563eb; /* warna biru khas HSI */
+}
+
+select {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Textarea lebih besar sedikit */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Tombol */
+form .button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  background-color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form .button:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+}
+
+form .button:active {
+  transform: scale(0.97);
+  background-color: #1d4ed8;
+}
+
+
+/* ============================= */
+/* ✨ FEEDBACK BUTTON INTERAKTIF */
+/* ============================= */
+.active-btn {
+  background-color: #2563eb !important;
+  cursor: pointer;
+  opacity: 1;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.active-btn:hover {
+  background-color: #1e40af !important;
+  transform: translateY(-2px);
+}
+
+.active-btn:active {
+  transform: scale(0.97);
+  background-color: #1d4ed8 !important;
+}
+
+/* =================== */
+/* Renponsive */
+/* =================== */
+
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .bio-content {
+    flex-direction: column; /* jadi gambar di atas, teks di bawah */
+    align-items: center;    /* biar gambar & teks center */
+    text-align: center;     /* teks juga center */
+  }
+
+  .bio-text {
+    width: 100%; /* teks pakai full lebar container */
+    margin-top: 15px; /* beri jarak dari gambar */
+  }
+
+  .bio-content .profil {
+    width: 150px;   /* gambar agak mengecil */
+    height: 150px;
+  }
+}
+
+
+/* mobile / Hp  */
+/* ============================
+   📱 RESPONSIVE UNTUK MOBILE
+   ============================ */
+@media (max-width: 768px) {
+
+  .container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  /* NAVBAR dibikin ke bawah */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 6px 0;
+    align-items: stretch;
+  }
+
+  nav a.button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 10px 12px;
+  }
+
+  /* Avatar row jadi vertikal */
+  .avatar-row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .avatar-row .avatar,
+  .bio-content .profil {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    flex-shrink: 0;
+  }
+
+  .avatar-text,
+  .bio-text {
+    width: 100%;
+    padding: 0 8px;
+    text-align: center;
+  }
+
+    /* --- VIDEO / IFRAME: responsive --- */
+  /* 1) Cara modern: gunakan aspect-ratio */
+  .card iframe,
+  .card video,
+  .gallery iframe,
+  iframe {
+    width: 100% !important;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
+    display: block;
+    border: none;
+  }
+
+
+
+  /* Biodata layout */
+  .bio-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 15px;
+  }
+
+  .bio-content .profil {
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+
+  .bio-text {
+    width: 100% !important;
+    padding: 0 10px;
+    text-align: center !important;
+  }
+
+  /* Galeri grid dari 4 kolom → 2 kolom */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  /* Tabel jadwal biar tidak melebar */
+  .jadwal-table {
+    font-size: 13px;
+  }
+}
+
+/* ============================
+   📱 EXTRA SMALL (HP KECIL)
+   ============================ */
+@media (max-width: 480px) {
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav a.button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
